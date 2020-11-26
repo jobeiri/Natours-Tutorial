@@ -4,20 +4,21 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "sass": "sass sass/main.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jobeiri/natours.git"
   },
-  "author": "Amir Hossein Jobe",
+  "author": "Amir Hossein Jobeiri",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jobeiri/natours/issues"
   },
   "homepage": "https://github.com/jobeiri/natours#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
-  },
-  "dependencies": {}
+    "sass": "^1.29.0"
+  }
 }
