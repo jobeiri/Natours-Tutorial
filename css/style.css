@@ -117,27 +117,27 @@ body {
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-margin-bottom-sm {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
 .u-margin-bottom-md {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-lg {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-top-lg {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 
 .u-margin-top-xl {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 
 .bg-video {
@@ -156,7 +156,7 @@ body {
   object-fit: cover;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   display: inline-block;
   position: relative;
   text-transform: uppercase;
@@ -165,6 +165,8 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -174,7 +176,8 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -418,6 +421,7 @@ body {
   border: none;
   border-radius: 0.3rem;
   border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
 }
 .form__input:focus {
   outline: none;
@@ -442,6 +446,46 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
+}
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-label {
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 4.5rem;
+}
+.form__radio-button {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  position: absolute;
+  top: -0.4rem;
+  left: 0;
+  border: 0.5rem solid #55c57a;
+  border-radius: 50%;
+}
+.form__radio-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #55c57a;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
 }
 
 .story {
