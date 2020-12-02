@@ -18,5 +18,10 @@
   } @else if ($vertical) {
     top: 50%;
     transform: translate(0, -50%);
+    animation: $name $duration $timing-function $delay;
   }
+}
+
+@mixin animation($name, $duration, $timing-function: ease-in-out, $delay: 0s) {
+  animation: $name $duration $timing-function $delay;
 }
