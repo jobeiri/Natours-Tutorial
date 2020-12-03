@@ -56,6 +56,10 @@
 
 .u-mb-md {
   margin-bottom: $md !important;
+
+  @include respond(tablet-portrait) {
+    margin-bottom: 3rem !important;
+  }
 }
 
 .u-ml-md {
@@ -83,6 +87,10 @@
 
 .u-mb-lg {
   margin-bottom: $lg !important;
+
+  @include respond(tablet-portrait) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-ml-lg {
