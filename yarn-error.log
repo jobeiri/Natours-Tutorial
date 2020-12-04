@@ -1,0 +1,56 @@
+Arguments: 
+  D:\Software\Nodejs\node.exe C:\Users\Amir Hossein Jobeiri\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --save-dev postcss
+
+PATH: 
+  C:\Users\Amir Hossein Jobeiri\bin;D:\Software\Git\mingw64\bin;D:\Software\Git\usr\local\bin;D:\Software\Git\usr\bin;D:\Software\Git\usr\bin;D:\Software\Git\mingw64\bin;D:\Software\Git\usr\bin;C:\Users\Amir Hossein Jobeiri\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\Software\Nodejs;D:\Software\Git\cmd;D:\Software\Python\Scripts;D:\Software\Python;C:\Users\Amir Hossein Jobeiri\AppData\Local\Microsoft\WindowsApps;C:\Users\Amir Hossein Jobeiri\AppData\Local\GitHubDesktop\bin;C:\Users\Amir Hossein Jobeiri\AppData\Local\atom\bin;D:\Software\Microsoft VS Code\bin;D:\Software\heroku\bin;C:\Program Files\heroku\bin;C:\Users\Amir Hossein Jobeiri\AppData\Roaming\npm;D:\Software\Git\usr\bin\vendor_perl;D:\Software\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\Projects\HtmlCss\advanced-css-and-sass-flexbox-grid\natours\package.json: Unexpected token } in JSON at position 402
+      at JSON.parse (<anonymous>)
+      at C:\Users\Amir Hossein Jobeiri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Amir Hossein Jobeiri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\Amir Hossein Jobeiri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "Landing page for natours",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch:sass": "sass sass/main.scss css/style.css --watch",
+      "compile:sass": "sass sass/main.scss css/style.comp.css",
+      "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jobeiri/natours.git"
+    },
+    "author": "Amir Hossein Jobeiri",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jobeiri/natours/issues"
+    },
+    "homepage": "https://github.com/jobeiri/natours#readme",
+    "devDependencies": {
+      "concat": "^1.0.3",
+      "sass": "^1.29.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
